@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 70px;
+            background: #333;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        h4 {
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+
+        #gramsOutput, #kgOutput, #ouncesOutput {
+            margin-bottom: 15px;
+        }
+
+        select {
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            background: #333;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h1 class="display-3 text-center mb-3">
+                    Weight Converter
+                </h1>
+                <form action="">
+                    <div class="form-group">
+                        <select name="" id="weight">
+                            <option value="">Pounds</option>
+                            <option value="">Grams</option>
+                            <option value="">Kilograms</option>
+                            <option value="">Ounces</option>
+                        </select>
+                        <input type="number" class="form-control form-control-lg" id="input">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-primary mb-2 text-center">
+                        <div class="bg-block">
+                            <h4>Grams: </h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success mb-2 text-center">
+                        <div class="bg-block text-center">
+                            <h4>Kilograms: </h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-danger mb-2 text-center">
+                        <div class="bg-block">
+                            <h4>Ounces: </h4>
+                            <div id="ouncesOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
